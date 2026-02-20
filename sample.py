@@ -1,61 +1,11 @@
-"""name="Bhanuprakash"
-age=20
-print(f"Name: {name}")
-print(f"Age: {age}")"""
-
-
-#name = input("Please enter your name : ")
-#print("Hello "+name+" welcome to python learning")
-
-"""number=int(input("Enter the number:"))
-if (number %2==0):
-  print("It is a Even Number")
-else:
-    print("Not an Even Number")
-    
-    
-age=int(input("Enter your age:"))
-if age>=18:
-    print("Your are eligible to vote")
-else:
-    print("Your are not eligible to vote")"""
-    
-     
-"""marks=int(input("Enter the Marks:"))
-if(marks>=90):
-    print("Grade A")
-elif(marks>=80):
-    print("Grade B")
-elif(marks>=70):
-    print("Grade C")
-elif(marks>=60):
-    print("Grade D")
-else:
-    print("Grade F")
-    
-    
-for i in range(10):
-    print(f"count :{i}")"""
-    
-"""states=["Andhra","Goa","Kerala","Telangana"]
-for state in states:
-    print(state)
-    
- """
- 
- 
- # Simple CLI To-Do Manager with Category
-
-# To-Do Manager using Class
 
 class TodoManager:
+
 
     def __init__(self):
         self.tasks = []
 
-    # -------------------------
-    # Add Task
-    # -------------------------
+   
     def add_task(self):
         task_name = input("Enter task: ")
         category = input("Enter category: ")
@@ -69,9 +19,7 @@ class TodoManager:
         self.tasks.append(task)
         print("Task added successfully!\n")
 
-    # -------------------------
-    # View Tasks
-    # -------------------------
+    
     def view_tasks(self):
         if len(self.tasks) == 0:
             print("No tasks available.\n")
@@ -84,9 +32,7 @@ class TodoManager:
             print(f"   Category: {self.tasks[i]['category']}")
             print(f"   Status: {status}\n")
 
-    # -------------------------
-    # Complete Task
-    # -------------------------
+    
     def complete_task(self):
         self.view_tasks()
         num = int(input("Enter task number to complete: ")) - 1
@@ -97,9 +43,7 @@ class TodoManager:
         else:
             print("Invalid task number!\n")
 
-    # -------------------------
-    # Delete Task
-    # -------------------------
+
     def delete_task(self):
         self.view_tasks()
         num = int(input("Enter task number to delete: ")) - 1
@@ -111,9 +55,7 @@ class TodoManager:
             print("Invalid task number!\n")
 
 
-# -------------------------
-# Main Program
-# -------------------------
+
 
 todo = TodoManager()
 
