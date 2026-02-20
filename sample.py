@@ -26,7 +26,7 @@ class TodoManager:
             return
 
         for i in range(len(self.tasks)):
-            status = "Completed" if self.tasks[i]["completed"] else "Not Completed✘"
+            status = "Completed" if self.tasks[i]["completed"] else "Not Completed"
 
             print(f"{i + 1}. {self.tasks[i]['task']}")
             print(f"   Category: {self.tasks[i]['category']}")
@@ -60,7 +60,7 @@ class TodoManager:
 todo = TodoManager()
 
 while True:
-    print("===== OOP TO-DO MANAGER =====")
+    print("===== TO-DO MANAGER =====")
     print("1. Add Task")
     print("2. View Tasks")
     print("3. Complete Task")
@@ -78,7 +78,7 @@ while True:
     elif choice == "4":
         todo.delete_task()
     elif choice == "5":
-        print("Goodbye 👋")
+        print("Goodbye ")
         break
     else:
         print("Invalid choice!\n")
